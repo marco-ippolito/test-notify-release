@@ -1,16 +1,16 @@
 name: notify-release
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '30 8 * * *'
+#  schedule:
+#    - cron: '30 8 * * *'
   release:
     types: [published]
 jobs:
   setup:
     runs-on: ubuntu-latest
-    steps:
-      - name: Notify release
-        uses: nearform/github-action-notify-release@feat/deprecate-stale-days
-        with:
-          notify-after: 1 minute
+#    steps:
+#      - name: Notify release
+#        uses: nearform/github-action-notify-release@feat/deprecate-stale-days
+#        with:
+#          notify-after: 1 minute
 
