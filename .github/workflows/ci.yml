@@ -12,5 +12,5 @@ jobs:
       - name: Notify release
         uses: nearform/github-action-notify-release@feat/deprecate-stale-days
         with:
-          - notify-after: 1 minute
+          notify-after: 1 minute
 
