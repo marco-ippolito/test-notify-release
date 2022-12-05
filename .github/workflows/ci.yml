@@ -11,4 +11,5 @@ jobs:
     steps:
       - name: Notify release
         uses: nearform/github-action-notify-release@fix/notify-after-default
-        stale-days: '1'
+        with:
+          stale-days: '1'
